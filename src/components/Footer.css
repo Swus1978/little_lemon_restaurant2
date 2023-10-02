@@ -1,0 +1,17 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: hsl(150, 6%, 93%);
+  height: 50px;
+}
+
+footer {
+  z-index: 1; /* Adjust the value as needed */
+}
+section{
+  float: right;
+  margin-right: 50px ;
+  font-size: 19pt;
+}

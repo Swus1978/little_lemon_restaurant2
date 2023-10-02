@@ -1,0 +1,37 @@
+{
+  "name": "little-lemon-restaurant-2",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "csbbust": "1.0.1",
+    "loader-utils": "3.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "@testing-library/react": "^14.0.0",
+    "babel-loader": "8.0.5",
+    "html-webpack-plugin": "^5.5.3",
+    "react-refresh": "^0.14.0",
+    "typescript": "4.1.3",
+    "webpack": "^5.88.2",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    " not op_mini all"
+  ]
+}

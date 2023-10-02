@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+  img {
+    width: 100%;
+  }
+}
+
+
+.order {
+  background-color: #495e57;
+  height: 550px;
+  text-align: center;
+  color: #f4ce14;
+}

@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.form-container {
+  width: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #495e57;
+  border-radius: 10px;
+}
+.form-title {
+  font-size: 40pt;
+  color: #f4ce14;
+  text-align: center;
+}
+
+.chef {
+  height: 100%;
+  border-radius: 16px;
+  margin-top: 50px;
+}
+
+.Field {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.Field label {
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.Field input,
+.Field select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #495e57;
+  border-radius: 5px;
+}
+
+.Field input[type="checkbox"] {
+  margin-right: 50px;
+}
+
+.Field.error {
+  border: 1px solid red;
+}
+
+fieldset {
+  background-color: #edefee;
+  height: 100%;
+  color: #495e57;
+  margin-bottom: 150px;
+}
+
+.reservations {
+  background-color: #495e57;
+}
+
+.terms-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+button[type="submit"] {
+  height: 30px;
+  width: 150px;
+  margin-left: 650px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f4ce14;
+  border: none;
+  color: #495e57;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #edefee;
+  cursor: not-allowed;
+}
+/* For all images to be responsive */
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  img {
+    width: 100%; /* Make images take full width on smaller screens */
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    width: 200px;
+    margin: 10px;
+    margin-top: 150px;
+  }
+}

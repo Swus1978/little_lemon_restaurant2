@@ -1,0 +1,153 @@
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+.main-pic {
+  border-radius: 16px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  height: 550px;
+  width: 450px;
+  float: right;
+}
+
+.hero-button {
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #f4ce14;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 20px;
+  background-color: #495e57;
+  color: #f4ce14;
+  height: 350px;
+  width: 95%;
+  font-size: 20px;
+  margin-left: 50px;
+  gap: 0px;
+}
+
+.hero-content {
+  float: left;
+  margin-left: 150px;
+}
+.order-button {
+  margin-left: 100px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  background-color: #f4ce14;
+  height: 30px;
+  width: 110px;
+  position: absolute;
+  bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #ffd700; /* Change to the color you want on hover */
+}
+
+.state {
+  margin-top: 20px;
+  color: #edefee;
+}
+
+.hero-text {
+  margin-top: 10px;
+  color: #edefee;
+  font-size: 16pt;
+}
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 50px;
+  color: #f4ce14;
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 300px;
+  margin-left: 250px;
+  margin-bottom: 100px;
+  padding: auto;
+  cursor: pointer;
+  float: left;
+}
+
+.card h2 {
+  font-size: 16pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card p {
+  font-size: 12pt;
+  margin: 0;
+}
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.card-img {
+  border-radius: 16px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.card:hover {
+  background-color: #f4ce14;
+}
+
+.price {
+  color: #ee9972;
+}
+
+/* For all images to be responsive */
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  img {
+    width: 100%; /* Make images take full width on smaller screens */
+  }
+}
+
+/* Apply styles for larger screens */
+@media (min-width: 768px) {
+  .card {
+    width: 200px; /* Adjust the width based on your design */
+    margin: 10px;
+    margin-top: 150px;
+  }
+}
+
+/* Apply styles for smaller screens */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Make the card take full width on smaller screens */
+    margin: 10px 0;
+  }
+}
