@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import fetchAPI from "./Fetch.json";
 import "./Reservations.css";
 import { bookingConfirmed } from "./booking.js";
+import Field from './Field'; 
+
+
 
 const Reservations = () => {
   const [selectedTime, setSelectedTime] = useState("");
@@ -264,31 +267,32 @@ const Reservations = () => {
               placeholder="Last name"
             />
           </div>
-          <div className={`Field ${emailError ? "error" : ""}`}>
-            <label>Email address</label>
-            <input
-              id="emailAddress"
-              name="emailAddress"
-              value={email}
-              type="email"
-              ref={inputRef}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="* Email address"
-            />
-          </div>
-          <div className={`Field ${phoneError ? "error" : ""}`}>
-            <label>Phone number</label>
-            <input
-              id="phoneNumber"
-              name="phoneNumber"
-              value={phoneNumber}
-              type="number"
-              ref={inputRef}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              placeholder="* Phone number"
-              min="10"
-            />
-          </div>
+          <Field emailError={emailError} phoneError={phoneError} data-testid="emailField" className="error">
+        <label>Email address</label>
+        <input
+          id="emailAddress"
+          name="emailAddress"
+          value={email}
+          type="email"
+          ref={inputRef}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="* Email address"
+        />
+      </Field>
+
+      <Field emailError={phoneError} data-testid="phoneField" className="error">
+        <label>Phone number</label>
+        <input
+          id="phoneNumber"
+          name="phoneNumber"
+          value={phoneNumber}
+          type="number"
+          ref={inputRef}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          placeholder="* Phone number"
+          min="10"
+        />
+      </Field>
           <div className="Field">
             <label>Special instructions</label>
             <textarea
@@ -311,9 +315,14 @@ const Reservations = () => {
               />
             </label>
           </div>
-          <button type="submit" disabled={!getIsFormValid()}>
+          <button
+           type="submit"
+           disabled={!getIsFormValid()}
+           aria-label="Reserve"
+         >
             Reserve
-          </button>
+         </button>
+         
         </fieldset>
       </form>
     </div>

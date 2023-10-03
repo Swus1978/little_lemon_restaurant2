@@ -28,13 +28,15 @@ const Home = () => {
             focused on traditional recipes served with a modern twist.
           </p>
           <section className="main-button">
-            <button
-              className="hero-button"
-              onClick={handleReservationsButtonClick}
-              type="button"
-            >
-              Reservations
-            </button>
+          <button
+            className="hero-button"
+            onClick={handleReservationsButtonClick}
+            type="button"
+            aria-label="Reservations"
+>
+            Reservations
+          </button>
+
           </section>
         </div>
         <div className="order-container">
@@ -44,6 +46,7 @@ const Home = () => {
               className="order-button"
               onClick={handleOrderButtonClick}
               type="button"
+              aria-label="Order"
             >
               Order Online
             </button>
@@ -76,13 +79,13 @@ const Home = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
               stroke="#000000"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="2"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <title>Ecommerce copia 3</title>
@@ -190,13 +193,13 @@ const Home = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
               stroke="#000000"
-              stroke-width="2"
+              strokeWidth="2"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="2"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="2"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <title>Ecommerce copia 3</title>
@@ -304,13 +307,13 @@ const Home = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="#000000"
               stroke="#000000"
-              stroke-width="2"
+              strokeWidth="2"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               ></g>
               <g id="SVGRepo_iconCarrier">
                 <title>Ecommerce copia 3</title>
